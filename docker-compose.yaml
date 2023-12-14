@@ -1,7 +1,7 @@
 version: '3'
 services:
   krakend:
-    image: devopsfaith/krakend
+    image: devopsfaith/krakend:watch
     command: run -dc "/etc/krakend/krakend.json"
     ports:
       - "8080:8080"

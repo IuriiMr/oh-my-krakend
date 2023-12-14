@@ -5,11 +5,15 @@
   "port": 8080,
   "endpoints": [
     {
-      "endpoint": "/test",
+      "endpoint": "/test/{user}",
       "backend":[
         {
-          "host":["sandbox.api.service.nhs.uk"],
+          "host":["https://sandbox.api.service.nhs.uk"],
           "url_pattern": "/hello-world/hello/world"
+        },
+        {
+          "host": ["https://jsonplaceholder.typicode.com"],
+          "url_pattern": "/users/{user}"
         }
       ]
     }
