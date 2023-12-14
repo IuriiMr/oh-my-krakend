@@ -1,0 +1,17 @@
+{
+  "$id": "https://www.krakend.io/schema/v3.json",
+  "version": 3,
+  "name": "Oh my KrakenD",
+  "port": 8080,
+  "endpoints": [
+    {
+      "endpoint": "/test",
+      "backend":[
+        {
+          "host":["sandbox.api.service.nhs.uk"],
+          "url_pattern": "/hello-world/hello/world"
+        }
+      ]
+    }
+  ]
+}
